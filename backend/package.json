@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-backend-api",
+  "version": "1.0.0",
+  "description": "Production-ready Node.js Express MongoDB REST API with JWT auth and MVC",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --signal SIGINT server.js",
+    "start": "node server.js",
+    "seed": "node src/scripts/seedAdmin.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "jwt",
+    "mvc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
